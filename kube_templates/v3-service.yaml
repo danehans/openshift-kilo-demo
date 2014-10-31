@@ -1,0 +1,7 @@
+apiVersion: v1beta1
+containerPort: 8080
+id: v3-master
+kind: Service
+port: 8080
+selector:
+  name: v3-master

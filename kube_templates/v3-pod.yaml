@@ -1,0 +1,15 @@
+desiredState:
+  manifest:
+    containers:
+    - image: openshift/origin
+      name: v3-master
+      ports:
+      - name: v3-api-port
+        containerPort: 8080
+        protocol: tcp
+      command: ['start', 'master', '--kubernetes=10.10.10.2', '--etcd=10.10.10.2']
+    id: v3-master-1
+    version: v1beta1
+id: v3-master
+labels:
+  name: v3

@@ -15,4 +15,5 @@ ADD openshift.service /etc/systemd/system/openshift.service
 # Enable OpenShift Systemd
 RUN systemctl enable /etc/systemd/system/openshift.service
 
+# Start
 CMD ["/usr/sbin/init"]
