@@ -1,0 +1,11 @@
+[Unit]
+Description=OpenShift v3
+After=docker.service
+Requires=docker.service
+
+[Service]
+TimeoutStartSec=0
+ExecStart=/usr/bin/openshift start
+
+[Install]
+WantedBy=multi-user.target
